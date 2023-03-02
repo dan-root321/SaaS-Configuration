@@ -1,0 +1,20 @@
+$colors:(
+    "primary":$clr-primary,
+    "dark":$clr-dark,
+    "light":$clr-light,
+);
+
+
+@each $key, $val in $colors{
+    .bg{
+        &--#{$key}{
+            background:$val;
+        }
+    }
+
+    .text{
+        &--#{$key}{
+            color: $val;
+        }
+    }
+}

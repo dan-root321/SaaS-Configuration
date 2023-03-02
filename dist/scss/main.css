@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap");
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: revert;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  white-space: revert;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+.bg--primary {
+  background: #F06236;
+}
+
+.text--primary {
+  color: #F06236;
+}
+
+.bg--dark {
+  background: #2b2b2b;
+}
+
+.text--dark {
+  color: #2b2b2b;
+}
+
+.bg--light {
+  background: #ffffff;
+}
+
+.text--light {
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
